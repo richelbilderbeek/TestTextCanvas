@@ -6,14 +6,17 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>262</width>
-    <height>228</height>
+    <width>273</width>
+    <height>550</height>
    </rect>
   </property>
   <property name="font">
    <font>
     <pointsize>20</pointsize>
    </font>
+  </property>
+  <property name="windowTitle">
+   <string>TestTextCanvas</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QDialog { 
@@ -24,6 +27,19 @@ QPushButton { color: rgb(0,0,0); }
 QPushButton { font: 48px  }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="TestTextCanvas.qrc">:/images/TestTextCanvasWelcome.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
    <item>
     <widget class="QPushButton" name="button_start_canvas">
      <property name="text">
@@ -56,6 +72,8 @@ QPushButton { font: 48px  }</string>
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="TestTextCanvas.qrc"/>
+ </resources>
  <connections/>
 </ui>

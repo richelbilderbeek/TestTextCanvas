@@ -4,7 +4,6 @@
 #include <iostream>
 
 #include "fileio.h"
-#include "richelbilderbeekprogram.h"
 #include "testtimer.h"
 #include "textcanvas.h"
 #include "trace.h"
@@ -55,8 +54,8 @@ ribi::About ribi::TestTextCanvasMenuDialog::GetAbout() const noexcept
     "Richel Bilderbeek",
     "TestTextCanvas",
     "tests the TextCanvas class",
-    "the 9th of January 2014",
-    "2014-2015",
+    "January 3rd of 2016",
+    "2014-2016",
     "http://www.richelbilderbeek.nl/ToolTestTextCanvas.htm",
     GetVersion(),
     GetVersionHistory());
@@ -79,24 +78,16 @@ ribi::Help ribi::TestTextCanvasMenuDialog::GetHelp() const noexcept
   );
 }
 
-boost::shared_ptr<const ribi::Program> ribi::TestTextCanvasMenuDialog::GetProgram() const noexcept
-{
-  const boost::shared_ptr<const Program> p {
-    new ProgramTestTextCanvas
-  };
-  assert(p);
-  return p;
-}
-
 std::string ribi::TestTextCanvasMenuDialog::GetVersion() const noexcept
 {
-  return "1.0";
+  return "2.0";
 }
 
 std::vector<std::string> ribi::TestTextCanvasMenuDialog::GetVersionHistory() const noexcept
 {
   return {
-    "2014-01-09: version 1.0: initial version"
+    "2014-01-09: version 1.0: initial version",
+    "2016-01-03: version 2.0: moved to own GitHub"
   };
 }
 
